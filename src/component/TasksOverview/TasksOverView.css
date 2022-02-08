@@ -1,0 +1,95 @@
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-title h5{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.task-sub-title p{
+    color: #a1a5b7;
+    font-weight: 500;
+    font-size: 14px;
+}
+.task-icon i{
+    color: #009ef7;
+}
+.task-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.task-logo-author{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex: .5;
+}
+.task-progress {
+    flex: .43;
+    display: flex;
+}
+.progress-percentage {
+    flex: .999;
+}
+.task-logo {
+    width: 60px;
+    padding: 14px;
+    background: #f5f8fa;
+    border-radius: 5px;
+}
+.task-auth-title {
+    white-space: nowrap;
+}
+.task-logo img{
+    width: 100%;
+}
+.task-auth-title h5{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+.task-auth-sub-title p{
+    font-size: small;
+    font-weight: 600;
+    color: #a1a5b7;
+    margin-bottom: 0;
+}
+.task-author {
+    padding-left: 15px;
+}
+@media only screen and (max-width: 425px) {
+    .task-header{
+        justify-content: space-around;
+    }
+    .task{
+        max-width: 99%;
+    }
+    .progress-percentage p{
+        margin: 0;
+    }
+    .progress-percentage .bars{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .task-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        padding: 10px;
+    }
+    .task-logo img {
+        width: 70%;
+    }
+    .task-author {
+        padding-left: 8px;
+    }
+    .task-auth-sub-title p {
+        font-size: x-small;
+    }
+}

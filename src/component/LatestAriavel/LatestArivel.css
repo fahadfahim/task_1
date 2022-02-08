@@ -1,0 +1,124 @@
+.latest-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.latest-title h5{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.latest-sub-title p{
+    color: #a1a5b7;
+    font-weight: 500;
+    font-size: 14px;
+}
+.latest-icon i{
+    color: #009ef7;
+}
+.latest-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.latest-logo-author{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* flex: .5; */
+}
+.latest-progress {
+    /* flex: .43; */
+    display: flex;
+}
+.progress-percentage {
+    flex: .999;
+}
+.latest-logo {
+    width: 60px;
+    padding: 14px;
+    background: #f5f8fa;
+    border-radius: 5px;
+}
+.latest-auth-title {
+    white-space: nowrap;
+}
+.latest-logo img{
+    width: 100%;
+}
+.latest-auth-title h5{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+.latest-auth-sub-title p{
+    font-size: small;
+    font-weight: 600;
+    color: #a1a5b7;
+    margin-bottom: 0;
+}
+.latest-author {
+    padding-left: 15px;
+}
+.redis {
+    background-color: #f4d8e1;
+    color: #f3416c;
+    font-size: small;
+    padding: 2px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.violet{
+    background-color: #cfc7e3;
+    color: #7239ed;
+    font-size: small;
+    padding: 2px;
+    border-radius: 5px;  
+}
+.latest-users p {
+    margin-bottom: 0;
+    font-size: small;
+    font-weight: 600;
+    color: #a1a5b7;
+}
+
+@media only screen and (max-width: 768px) {
+    .latest-header{
+        justify-content: space-around;
+    }
+    .latest{
+max-width: 99%;
+    }
+.latest-body .latest-users{
+display: none;
+}
+}
+@media only screen and (max-width: 768px) {
+    .latest-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        padding: 10px;
+    }
+    .latest-logo img {
+        width: 70%;
+    }
+    .latest-author {
+        padding-left: 8px;
+    }
+    .latest-auth-sub-title p {
+        font-size: x-small;
+    }
+    .redis {
+        font-size: x-small;
+    }
+    .violet{
+        font-size: x-small;
+    }
+    .latest-users p{
+        font-size: x-small;
+        white-space: nowrap;
+    }
+}
